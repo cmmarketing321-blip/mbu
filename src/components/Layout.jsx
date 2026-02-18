@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     <div>
                         <div className="flex items-center space-x-3 mb-4">
-                            <img src="/src/assets/logo_new.svg" alt="MBU Logo" className="h-12 w-12" />
+                            <img src="/logo_new.svg" alt="MBU Logo" className="h-12 w-12" />
                             <span className="font-heading font-bold text-lg">Mohan Babu Educational Services</span>
                         </div>
                         <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
