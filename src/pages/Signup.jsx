@@ -65,7 +65,7 @@ const Signup = () => {
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
                 <div className="relative z-10 max-w-lg">
                     <div className="flex items-center space-x-4 mb-8">
-                        <img src="/src/assets/logo_new.svg" alt="MBU Logo" className="h-20 w-20" />
+                        <img src="/logo_new.svg" alt="MBU Logo" className="h-20 w-20" />
                         <div className="flex flex-col leading-none">
                             <span className="font-heading font-bold text-2xl text-secondary">Mohan Babu</span>
                             <span className="text-xs tracking-wider uppercase opacity-80">Educational Services</span>

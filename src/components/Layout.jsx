@@ -43,7 +43,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-3">
-                        <img src="/src/assets/logo_new.svg" alt="MBU Logo" className="h-12 w-12 md:h-14 md:w-14" />
+                        <img src="/logo_new.svg" alt="MBU Logo" className="h-12 w-12 md:h-14 md:w-14" />
                         <div className="flex flex-col leading-none">
                             <span className="font-heading font-bold text-lg md:text-xl text-secondary">Mohan Babu</span>
                             <span className="text-[10px] md:text-xs tracking-wider uppercase opacity-80">Educational Services</span>
