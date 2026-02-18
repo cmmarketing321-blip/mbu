@@ -130,9 +130,6 @@ const Footer = () => {
                     <div>
                         <h4 className="font-heading font-bold text-lg mb-4 text-secondary">Contact Us</h4>
                         <ul className="space-y-2 text-sm text-primary-foreground/70">
-                            <li className="flex items-start space-x-2">
-                                <span>123 University Road, Hyderabad, Telangana, India</span>
-                            </li>
                             <li>support@mohanbabuuniversities.in</li>
                             <li>+91 9281 416 210</li>
                         </ul>

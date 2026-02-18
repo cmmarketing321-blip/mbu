@@ -71,7 +71,7 @@ const Signup = () => {
                             <span className="text-xs tracking-wider uppercase opacity-80">Educational Services</span>
                         </div>
                     </div>
-                    <h1 className="font-heading text-4xl font-bold mb-4">BS in Computer Science (AEDP)</h1>
+                    <h1 className="font-heading text-4xl font-bold mb-4">BTech in Computer Science (AEDP)</h1>
                     <p className="text-lg text-primary-foreground/80 leading-relaxed">
                         Access your student portal, track your application status, and stay connected with the MBU community.
                     </p>

@@ -16,7 +16,7 @@ const Privacy = () => {
 
                     <h3 className="font-heading text-2xl font-bold text-primary">Information We Collect</h3>
                     <p>
-                        As a visitor, you can view all the content on our website including information about our BS in Computer Science (AEDP) program, specializations, placements, events, and faculty details.
+                        As a visitor, you can view all the content on our website including information about our BTech in Computer Science (AEDP) program, specializations, placements, events, and faculty details.
                         You are not required to provide any personal information to view this content.
                     </p>
                     <p>

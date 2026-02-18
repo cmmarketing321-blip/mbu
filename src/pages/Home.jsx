@@ -16,7 +16,7 @@ const Home = () => {
                             ADMISSIONS OPEN 2026-27
                         </div>
                         <h1 className="font-heading text-4xl md:text-6xl font-bold leading-tight mb-6">
-                            BS in Computer Science
+                            BTech in Computer Science
                         </h1>
                         <p className="text-xl md:text-2xl text-white/90 mb-4 font-light">
                             AEDP – Apprenticeship Embedded Degree Program
@@ -161,7 +161,7 @@ const Home = () => {
                         {[
                             {
                                 name: "Priya Sharma",
-                                course: "BS Computer Science",
+                                course: "BTech Computer Science",
                                 quote: "The apprenticeship model at MBU is a game-changer. Working with industry professionals while studying gave me a huge head start.",
                                 batch: "Batch of 2025"
                             },

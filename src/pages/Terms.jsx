@@ -23,7 +23,7 @@ const Terms = () => {
 
                     <h3 className="font-heading text-2xl font-bold text-primary">2. Use of Website</h3>
                     <p>
-                        This website is intended to provide information about the BS in Computer Science (Apprenticeship Embedded Degree Program)
+                        This website is intended to provide information about the BTech in Computer Science (Apprenticeship Embedded Degree Program)
                         offered by MBU in partnership with TalentSprint (Part of Accenture), as well as other academic programs, placements, events, and institutional details.
                     </p>
                     <ul className="list-disc pl-6 space-y-2">
