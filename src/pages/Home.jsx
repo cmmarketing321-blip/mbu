@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <div className="flex flex-col">
             {/* Hero Section */}
-            <section className="relative min-h-[600px] flex items-center bg-hero-gradient text-white overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-40 mix-blend-overlay"></div>
+            <section className="relative min-h-[600px] flex items-center bg-[url('https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center text-white overflow-hidden">
+                <div className="absolute inset-0 bg-hero-gradient opacity-70"></div>
                 <div className="container mx-auto px-4 relative z-10 py-20">
                     <div className="max-w-3xl">
                         <div className="inline-block bg-secondary text-secondary-foreground font-bold px-3 py-1 rounded-sm mb-6 text-sm tracking-wide">
@@ -154,7 +154,7 @@ const Home = () => {
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <h2 className="font-heading text-3xl md:text-4xl font-bold text-secondary mb-4">Student Voices</h2>
-                        <p className="text-primary-foreground/80">Hear from our students about their journey at Mohan Babu Educational Services.</p>
+                        <p className="text-primary-foreground/80">Hear from our students about their journey at Mohan Babu Universities.</p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

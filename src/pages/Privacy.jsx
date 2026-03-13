@@ -10,7 +10,7 @@ const Privacy = () => {
 
                 <div className="prose prose-blue max-w-none text-foreground/80 space-y-6">
                     <p>
-                        We at Mohan Babu Educational Services (MBU) understand the importance of protecting your data and any information we collect for your service.
+                        We at Mohan Babu Universities (MBU) understand the importance of protecting your data and any information we collect for your service.
                         All user data collected in any form will not be sent out of the institution for any unauthorized purpose.
                     </p>
 

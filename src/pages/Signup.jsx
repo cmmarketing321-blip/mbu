@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/Button';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, Mail, Lock, Eye, EyeOff, User } from 'lucide-react';
+import { ArrowLeft, Mail, Lock, Eye, EyeOff, User, Phone } from 'lucide-react';
 
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
@@ -13,6 +13,7 @@ const Signup = () => {
         firstName: '',
         lastName: '',
         email: '',
+        phone: '',
         password: ''
     });
 
@@ -23,7 +24,7 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.password) {
+        if (!formData.firstName || !formData.lastName || !formData.email || !formData.phone || !formData.password) {
             toast.error('Please fill in all fields');
             return;
         }
@@ -33,6 +34,7 @@ const Signup = () => {
             firstName: formData.firstName,
             lastName: formData.lastName,
             email: formData.email,
+            phone: formData.phone,
             password: formData.password // In a real app, never store plain passwords!
         };
 
@@ -65,10 +67,10 @@ const Signup = () => {
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
                 <div className="relative z-10 max-w-lg">
                     <div className="flex items-center space-x-4 mb-8">
-                        <img src="/logo_new.svg" alt="MBU Logo" className="h-20 w-20" />
+                        <img src="/logo.png" alt="MBU Logo" className="h-20 w-20" />
                         <div className="flex flex-col leading-none">
-                            <span className="font-heading font-bold text-2xl text-secondary">Mohan Babu</span>
-                            <span className="text-xs tracking-wider uppercase opacity-80">Educational Services</span>
+                            <span className="font-heading font-bold text-2xl text-red-600">Mohan Babu</span>
+                            <span className="text-xs tracking-wider uppercase opacity-80 text-red-600">Universities</span>
                         </div>
                     </div>
                     <h1 className="font-heading text-4xl font-bold mb-4">BTech in Computer Science (AEDP)</h1>
@@ -117,6 +119,17 @@ const Signup = () => {
                         </div>
 
                         <div className="space-y-2">
+                            <label className="text-sm font-medium leading-none" htmlFor="phone">Phone Number</label>
+                            <div className="relative">
+                                <Phone className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
+                                <input
+                                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 pl-10 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                                    id="phone" placeholder="+1 (555) 000-0000" type="tel" value={formData.phone} onChange={handleChange} required
+                                />
+                            </div>
+                        </div>
+
+                        <div className="space-y-2">
                             <label className="text-sm font-medium leading-none" htmlFor="password">Password</label>
                             <div className="relative">
                                 <Lock className="absolute left-3 top-2.5 h-4 w-4 text-muted-foreground" />
@@ -137,7 +150,7 @@ const Signup = () => {
                         <div className="flex items-start space-x-2">
                             <input type="checkbox" id="terms" className="mt-1" required />
                             <label htmlFor="terms" className="text-xs text-muted-foreground leading-snug">
-                                I agree to the <Link to="/terms-and-conditions" className="text-secondary hover:underline">Terms & Conditions</Link> and <Link to="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>, and authorize Mohan Babu Educational Services and its partners to contact me via Email, SMS, WhatsApp, RCS, or Voice Call, even if my number is on DNC/NDNC. I consent to be contacted regarding services offered by MBU.
+                                I agree to the <Link to="/terms-and-conditions" className="text-secondary hover:underline">Terms & Conditions</Link> and <Link to="/privacy-policy" className="text-secondary hover:underline">Privacy Policy</Link>, and authorize Mohan Babu Universities and its partners to contact me via Email, SMS, WhatsApp, RCS, or Voice Call, even if my number is on DNC/NDNC. I consent to be contacted regarding services offered by MBU.
                             </label>
                         </div>
 

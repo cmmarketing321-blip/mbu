@@ -10,7 +10,7 @@ const Terms = () => {
 
                 <div className="prose prose-blue max-w-none text-foreground/80 space-y-6">
                     <p>
-                        Welcome to the official website of Mohan Babu Educational Services (MBU).
+                        Welcome to the official website of Mohan Babu Universities (MBU).
                         By accessing and using this website, you agree to comply with and be bound by the following terms and conditions.
                         Please read them carefully before using our services.
                     </p>
@@ -36,7 +36,7 @@ const Terms = () => {
                     <h3 className="font-heading text-2xl font-bold text-primary">3. Intellectual Property</h3>
                     <p>
                         All content on this website—including text, graphics, logos, images, audio clips, digital downloads, and data compilations—is the property of
-                        Mohan Babu Educational Services and is protected by Indian and international copyright laws.
+                        Mohan Babu Universities and is protected by Indian and international copyright laws.
                         Unauthorized reproduction, modification, or distribution of any content is strictly prohibited.
                     </p>
 
