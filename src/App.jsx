@@ -9,6 +9,7 @@ import About from '@/pages/About';
 import Programs from '@/pages/Programs';
 import Placements from '@/pages/Placements';
 import Contact from '@/pages/Contact';
+import ScrollToTop from '@/components/ScrollToTop';
 
 import { Toaster } from 'sonner';
 
@@ -16,6 +17,7 @@ function App() {
   return (
     <>
       <Toaster position="top-center" richColors />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/about" element={<Layout><About /></Layout>} />
