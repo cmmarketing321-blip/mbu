@@ -8,9 +8,9 @@ const TopBar = () => {
         <div className="bg-[#d20911] text-white/90 py-2 border-b border-red-900/20 text-xs sm:text-sm">
             <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2 md:gap-0">
                 <div className="flex items-center space-x-6">
-                    <a href="mailto:yasaswini@mohanbabuuniversities.in" className="flex items-center hover:text-white transition-colors">
+                    <a href="mailto:yashwanth@mohanbabuuniversities.in" className="flex items-center hover:text-white transition-colors">
                         <Mail className="h-3 w-3 mr-2" />
-                        <span>yasaswini@mohanbabuuniversities.in</span>
+                        <span>yashwanth@mohanbabuuniversities.in</span>
                     </a>
                     <a href="tel:+919281416210" className="flex items-center hover:text-white transition-colors">
                         <Phone className="h-3 w-3 mr-2" />
@@ -57,7 +57,9 @@ const Navbar = () => {
                         <Link to="/programs" className="hover:text-secondary transition-colors font-bold">Programs</Link>
                         <Link to="/placements" className="hover:text-secondary transition-colors font-bold">Placements</Link>
                         <Link to="/contact" className="hover:text-secondary transition-colors font-bold">Contact</Link>
-                        <Button variant="secondary" size="sm" className="font-bold">Apply Now</Button>
+                        <Link to="/login">
+                            <Button variant="secondary" size="sm" className="font-bold">Apply Now</Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -73,12 +75,14 @@ const Navbar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white border-t border-gray-100">
                     <div className="flex flex-col space-y-4 p-4">
-                        <Link to="/" className="hover:text-secondary text-sm font-bold">Home</Link>
+                        <Link to="/" className="hover:text-secondary text-sm font-bold animate-fade-in">Home</Link>
                         <Link to="/about" className="hover:text-secondary text-sm font-bold">About Us</Link>
                         <Link to="/programs" className="hover:text-secondary text-sm font-bold">Programs</Link>
                         <Link to="/placements" className="hover:text-secondary text-sm font-bold">Placements</Link>
                         <Link to="/contact" className="hover:text-secondary text-sm font-bold">Contact</Link>
-                        <Button variant="secondary" className="w-full font-bold">Apply Now</Button>
+                        <Link to="/login" className="w-full">
+                            <Button variant="secondary" className="w-full font-bold">Apply Now</Button>
+                        </Link>
                     </div>
                 </div>
             )}
@@ -130,7 +134,7 @@ const Footer = () => {
                     <div>
                         <h4 className="font-heading font-bold text-lg mb-4 text-secondary">Contact Us</h4>
                         <ul className="space-y-2 text-sm text-primary-foreground/70">
-                            <li>yasaswini@mohanbabuuniversities.in</li>
+                            <li>yashwanth@mohanbabuuniversities.in</li>
                             <li>+91 9281 416 210</li>
                         </ul>
                     </div>

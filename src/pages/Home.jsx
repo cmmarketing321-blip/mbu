@@ -26,12 +26,16 @@ const Home = () => {
                             Powered by TalentSprint (Part of Accenture).
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4">
-                            <Button variant="secondary" size="lg" className="font-bold text-base">
-                                Apply Now
-                            </Button>
-                            <Button variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white hover:text-primary font-bold text-base">
-                                Know More
-                            </Button>
+                            <Link to="/login">
+                                <Button variant="secondary" size="lg" className="font-bold text-base w-full sm:w-auto">
+                                    Apply Now
+                                </Button>
+                            </Link>
+                            <Link to="/about">
+                                <Button variant="outline" size="lg" className="bg-transparent text-white border-white hover:bg-white hover:text-primary font-bold text-base w-full sm:w-auto">
+                                    Know More
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -82,7 +86,9 @@ const Home = () => {
                                     </div>
                                     <h3 className="font-heading text-xl font-bold text-primary">{program.title}</h3>
                                     <p className="text-sm text-muted-foreground">Comprehensive curriculum aligned with industry standards and future technologies.</p>
-                                    <Button variant="link" className="text-secondary font-bold hover:text-secondary/80">View Details <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                    <Link to="/programs">
+                                        <Button variant="link" className="text-secondary font-bold hover:text-secondary/80">View Details <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                    </Link>
                                 </CardContent>
                             </Card>
                         ))}
